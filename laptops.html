@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color:rgba(0, 0, 0, 0.183);
+           
+        }
+        body::before
+    {
+        content:"";
+        position: absolute;
+        height:100%;
+        width:100%;
+        background: url(logo.jpg) repeat-y  center center/cover;
+        opacity:0.3;
+        z-index:-1;
+    }
+    .tag{
+        margin-right: 50px;
+        color:lightgreen;
+        font-size: 20px;
+        font-family: cursive;
+        /* background-color:orange;
+        border-radius: 20px; */
+    }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+  
+        .head {
+            display: flex;
+            justify-content:space-between;
+            background-color: rgba(0, 0, 0, 0.613);
+            align-items: center;
+            /* opacity: 0.7; */
+            position: sticky;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            border: 1px solid darkcyan;
+            border-radius: 35px;
+            padding: 0px;
+            margin-left: 30px;
+
+        }
+
+        .nav {
+            display: flex;
+            font-size: 14px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .ele {
+            margin-left: 25px;
+            padding: 5px;
+            text-decoration: none;
+            list-style: none;
+            border-radius: 12px;
+            background-color: rgba(156, 179, 160, 0.809);
+            color: white;
+            cursor: pointer;
+        }
+        .ele:hover{
+            
+            background-color:grey;
+        }
+       
+        .type{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-family: cursive;
+            border: 1px solid blue;
+            color :rebeccapurple;
+            background-color: rgba(255, 0, 0, 0.279);
+            margin:20px 15px;
+            padding :5px;
+            border-radius: 12px;
+            /* position: sticky; */
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+           display:flex;
+           flex-wrap: wrap;
+            border: 2px solid blue;
+            padding: 10px;
+            margin:20px 10px;
+            justify-content: center;
+        }
+    .itemimg{
+        height:100px;
+        width:100px;
+    }
+    .info{
+        display:flex;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+        font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        align-items :center;
+    }
+    .price{
+        display:flex;
+         justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background-color:rgba(0, 255, 255, 0.483);
+        color:green;
+        margin: 50px auto;
+        padding:7px;
+    }
+    .dis{
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        margin:100px;
+
+    }
+        </style>
+    </head>
+<body>
+    <header class="head">
+        <!-- <img class="logo" src="logo1.jpg"> -->
+        <ul class="nav">
+            <li class="ele"><a href="home.html">Home</a></li>
+            <li class="ele"><a href="Contact us"> Contact Us</a></li>
+            <li class="ele"><a href="Services"> Services</a></li>
+            <li class="ele"><a href="Cart">Your Cart</a> </li>
+        </ul>
+        <div class="tag">CLUBCART.COM</div>
+
+    </header>
+    <div class="type">Here are the top trending Laptops</div>
+    <main class="main">
+        <div class="box">
+            <div ><img class="itemimg" src="laptop.jpg" alt=""></div>
+            <div class="info"> 
+            <div class="dis">Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                Provident, pariatur.
+            </div>
+            <button class="price">PRICE :100</button>
+            </div>
+         </div>           
+        </div>
+   
+    </main>
+</body>
+</html>
